@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="snail.ico" />
+    <title>Fibonacci Calculator</title>
+</head>
+
+<body>
+    <main>
+        <section class="info">
+            <h1>Fibonacci</h1>
+            <h1>CALCULATOR</h1>
+            <p>
+                The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers,
+                starting with 0, and 1.
+            </p>
+            <div class="ejemplo">
+                <p>
+                    The Fibonacci Sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
+                </p>
+            </div>
+            <p>
+                Written as a rule, the expression is:
+            </p>
+            <div class="ejemplo">
+                <p>
+                    Xn = Xn-1 + Xn-2
+                </p>
+            </div>
+        </section>
+        <section class="checker">
+            <div class="entrada">
+                <form class="formulario">
+                    <label for="" class="campo-label">What do you want to calculate?</label>
+                    <p>
+                        Insert a number to calculate the Fibonacci sequence of all numbers that are less than or equal
+                        to it.
+                    </p>
+
+                    <div class="entradas">
+                        <input type="text" class="campo-entrada" id="numero" placeholder="Insert Number">
+                        <select name="" id="opcion" class="seleccion" placeholder="sell">
+                            <option value="sequence">Sequence</option>
+                            <option value="sequence_odd">Sequence of odd numbers</option>
+                            <option value="sequence_even">Sequence of even numbers</option>
+                            <option value="add">Addition</option>
+                            <option value="odd">Addition of odd numbers</option>
+                            <option value="even">Addition of even numbers</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Check" class="boton">
+                </form>
+            </div>
+            <div class="resultado">
+                <h1></h1>
+            </div>
+        </section>
+    </main>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
